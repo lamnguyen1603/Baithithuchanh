@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1; Cho danh sách các điểm thi ở trong một mảng. Hãy viết
+    // hàm findMax() với đầu vào là một mảng điểm và đầu ra là
+    // điểm thi lớn thứ 2
+
+
+    // function findMax (poIn) {
+    //     for (let i=0;i<poIn.length-1;i++) {
+    //         for (let j=i+1;j<poIn.length;j++) {
+    //             if (poIn[i]>poIn[j]) {
+    //                 let tmp = poIn[j];
+    //                 poIn[j] = poIn[i];
+    //                 poIn[i] = tmp;
+    //             }
+    //         }
+    //     }
+    //     for (let k=0;k<poIn.length;k++) {
+    //         document.write(poIn[k] + ', ');
+    //     }
+    //     document.write('Điểm thi cao thứ hai là : ' + poIn[poIn.length-2])
+    // }
+    // let poIn= [3,5,7,67,8,24,9];
+    // findMax(poIn)
+
+
+    //Bài 2 :
+
+    // function tryRemoveFromArray(arr,index){
+    //     let newArr = [];
+    //     if(index>=0 && index< arr.length){
+    //         for (let i=0;i<index;i++){
+    //             newArr.push(arr[i]);
+    //         }
+    //         for (let i=index+1;i<arr.length;i++){
+    //             newArr.push(arr[i]);
+    //         }
+    //     }else return arr;
+    //     return newArr;
+    // }
+    // let arr = [1,2,3,4,5,6]
+    // let index = +prompt('Nhập vị trí index')
+    // document.write(tryRemoveFromArray(arr,index)+'')
+
+
+    //Bài 4:
+
+
+    // class Circle {
+    //     x;
+    //     y;
+    //     radius;
+    //     constructor(x,y,radius) {
+    //         this.x = x;
+    //         this.y = y;
+    //         this.radius = radius;
+    //     }
+    //     render () {
+    //         let c = document.getElementById('myCanvas');
+    //         let ctx = c.getContext('2d');
+    //         ctx.beginPath();
+    //         ctx.arc(this.x,this.y,this.radius,0,2*Math.PI);
+    //         ctx.fillStyle = '#000000';
+    //         ctx.fill();
+    //     }
+    // }
+    // let circle = new Circle(90,50,15);
+    // circle.render()
+
+
+    //Bài 3 :
+    // Viết hàm sumOfListFibonacy() nhận vào một số nguyên x ,
+    //     hàm trả về giá trị là tổng các số fibonacy từ 0 cho tới x
+
+
+    // function sumOfListFiBoNaCy(x) {
+    //     let arr = [0, 1]
+    //     let a = 0;
+    //     let b = 1;
+    //     let temp;
+    //     let sum = 0;
+    //     for (let i = 2; ; i++) {
+    //         if (a + b > x) break;
+    //         arr.push(a + b);
+    //         temp = a;
+    //         a = b;
+    //         b = temp + b;
+    //     }
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum += arr[i]
+    //     }
+    //     return sum;
+    // }
+    //
+    // let x = prompt('nhập số nguyên')
+    // document.write(sumOfListFiBoNaCy(x) + 'là tổng các số fibonacy')
+
+
+</script>
+<canvas id="myCanvas" width="1000" height="500"></canvas>
+</body>
+</html>
